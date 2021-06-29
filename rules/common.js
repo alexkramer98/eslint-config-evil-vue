@@ -4,6 +4,7 @@ module.exports = {
         "plugin:vue/recommended"
     ],
     rules: {
+        "indent": ["error", 4],
         "no-alert": "error",
         "no-array-constructor": "error",
         "no-bitwise": "error",
@@ -149,7 +150,6 @@ module.exports = {
         "no-unreachable-loop": "error",
         "no-nonoctal-decimal-escape": "error",
         "init-declarations": "error",
-
         "no-magic-numbers": [
             "error",
             { "ignore": [0, 1], "enforceConst": true, "ignoreDefaultValues": true }
@@ -207,7 +207,6 @@ module.exports = {
         "no-unused-expressions": ["error", { "enforceForJSX": true }],
         "no-sequences": ["error", { "allowInParentheses": false }],
         "no-implicit-coercion": ["error", { "disallowTemplateShorthand": true }],
-
         "padding-line-between-statements": [
             "error",
             { "blankLine": "always", "prev": "*", "next": "*" },
@@ -233,7 +232,6 @@ module.exports = {
             { "blankLine": "any", "prev": "cjs-import", "next": "cjs-import" },
             { "blankLine": "any", "prev": "cjs-export", "next": "cjs-export" }
         ],
-
         "no-restricted-syntax": [
             "error",
             {
@@ -241,5 +239,36 @@ module.exports = {
                 "message": "The comma operator is confusing and a common mistake. Don’t use it!"
             }
         ],
+        "arrow-body-style": "error",
+        "no-tabs": "error",
+        "curly": "error",
+        "max-len": [
+            "error",
+            {
+                "code": 120,
+                "comments": 80,
+                "ignorePattern": "// eslint-disable-next-line",
+                "ignoreUrls": true,
+                "ignoreStrings": true,
+                "ignoreTemplateLiterals": true,
+                "ignoreRegExpLiterals": true
+            }
+        ],
+        "quotes": [
+            "error",
+            "single",
+            { "avoidEscape": true, "allowTemplateLiterals": false }
+        ],
+        "lines-around-comment": [
+            "error",
+            {
+                "beforeBlockComment": true,
+                "beforeLineComment": true,
+                "allowBlockStart": true,
+                "allowObjectStart": true,
+                "allowArrayStart": true,
+                "allowClassStart": true
+            }
+        ]
     }
 };

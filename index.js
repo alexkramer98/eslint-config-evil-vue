@@ -23,37 +23,7 @@ module.exports = {
         browser: true,
     },
     rules: {
-        "arrow-body-style": "error",
-        "no-tabs": "error",
-        "curly": "error",
-        "max-len": [
-            "error",
-            {
-                "code": 120,
-                "comments": 80,
-                "ignorePattern": "// eslint-disable-next-line",
-                "ignoreUrls": true,
-                "ignoreStrings": true,
-                "ignoreTemplateLiterals": true,
-                "ignoreRegExpLiterals": true
-            }
-        ],
-        "quotes": [
-            "error",
-            "double",
-            { "avoidEscape": true, "allowTemplateLiterals": false }
-        ],
-        "lines-around-comment": [
-            "error",
-            {
-                "beforeBlockComment": true,
-                "beforeLineComment": true,
-                "allowBlockStart": true,
-                "allowObjectStart": true,
-                "allowArrayStart": true,
-                "allowClassStart": true
-            }
-        ]
+
     },
     reportUnusedDisableDirectives: true,
     ignorePatterns: [
@@ -123,13 +93,12 @@ module.exports = {
                 "spaced-comment": "off",
                 "no-inline-comments": "off",
                 "import/unambiguous": "off",
-                "putout/putout": "off"
             }
         },
         {
             "files": ["*.json"],
             "extends": ["plugin:json/recommended"],
-            "rules": { "import/unambiguous": "off", "putout/putout": "off" }
+            "rules": { "import/unambiguous": "off"}
         }
     ]
 };
