@@ -4,7 +4,6 @@ module.exports = {
         "plugin:vue/recommended"
     ],
     rules: {
-        "indent": ["error", 4],
         "no-alert": "error",
         "no-array-constructor": "error",
         "no-bitwise": "error",

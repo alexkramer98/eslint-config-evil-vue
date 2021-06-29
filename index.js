@@ -23,7 +23,11 @@ module.exports = {
         browser: true,
     },
     rules: {
-
+        "prettier/prettier": ["error", {
+            singleQuote: true,
+            tabWidth: 4,
+        }],
+        "vue/html-indent": ["error", 4]
     },
     reportUnusedDisableDirectives: true,
     ignorePatterns: [
