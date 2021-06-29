@@ -14,6 +14,7 @@ module.exports = {
         "./rules/security",
         "./rules/sonarjs",
         "./rules/unicorn",
+        "./rules/no-loops",
     ].map(require.resolve),
     parserOptions: {
         sourceType: "module",
