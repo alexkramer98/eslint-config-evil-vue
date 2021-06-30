@@ -3,7 +3,7 @@ module.exports = {
     rules: {
         "ext/lines-between-object-properties": [
             "error",
-            "never",
+            "always",
             { "exceptBetweenSingleLines": true }
         ],
     }

@@ -17,7 +17,6 @@ A little stricter - thus: evil - but still very useful and compatible with `VueJ
 * Semicolon is not allowed.
 * Loops of any kind are not allowed.
 * Console statements are allowed (generates a warning instead of an error), but only in the development environment. (You can/should use `husky` to lint your code using the production environment in a `pre-commit hook`.)
-* Lines between object properties are not allowed.
 
 ## Split rules
 
