@@ -10,7 +10,7 @@ module.exports = {
         "no-caller": "error",
         "no-case-declarations": "error",
         "no-class-assign": "error",
-        "no-console": "error",
+        "no-console": process.env.NODE_ENV === 'production' ? "error" : "warn",
         "no-const-assign": "error",
         "no-constant-condition": "error",
         "no-continue": "error",
