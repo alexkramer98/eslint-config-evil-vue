@@ -1,5 +1,15 @@
 module.exports = {
     plugins: ["import"],
+    settings: {
+        "import/resolver": {
+            alias: {
+                map: [
+                    ['@', './src']
+                ],
+                extensions: ['.js', '.json', '.vue']
+            }
+        }
+    },
     rules: {
         "import/named": "error",
         "import/default": "error",
