@@ -30,6 +30,7 @@ module.exports = {
         }],
         "vue/html-indent": ["error", 4],
         "no-shadow": ["error", { "allow": ["state"] }],
+        "vue/padding-line-between-blocks": ["error", "always"],
         "no-param-reassign": [
             "error",
             {
