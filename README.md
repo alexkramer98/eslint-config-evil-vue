@@ -12,6 +12,7 @@ A little stricter - thus: evil - but still very useful and compatible with `VueJ
   - Uses `plugin:vue/recommended` for the strictest out-of-the-box Vue config.
   - Added `Vuex` support (made an exception for the `state` variable name) for some conflicting rules.
   - `import '@/...'` is understood.
+  - Disabled `import/no-anonymous-default-export` for Vue components.
 * Enforces single quotes instead of double quotes.
 * Uses 4 space indents instead of 2.
 * Semicolon is not allowed.

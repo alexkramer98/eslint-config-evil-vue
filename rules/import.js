@@ -78,5 +78,13 @@ module.exports = {
                 "newlines-between": "always"
             }
         ],
-    }
+    },
+    overrides: [
+        {
+            "files": ["**/*.vue"],
+            "rules": {
+                "import/no-anonymous-default-export": "off"
+            }
+        }
+    ]
 };
