@@ -268,6 +268,12 @@ module.exports = {
                 "allowArrayStart": true,
                 "allowClassStart": true
             }
-        ]
+        ],
+        "no-restricted-imports": ["error", {
+            "patterns": [{
+                "group": [".*"],
+                "message": "Relative imports are not allowed. Please use \'@\' for a module or \'@/\' for the project root."
+            }]
+        }],
     }
 };
