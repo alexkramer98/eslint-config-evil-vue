@@ -13,6 +13,7 @@ A little stricter - thus: evil - but still very useful and compatible with `VueJ
   - Added `Vuex` support (made an exception for the `state` variable name) for some conflicting rules.
   - `import '@/...'` is understood.
   - Disabled `import/no-anonymous-default-export` for Vue components.
+  - Changed all enabled rules of `vue:recommended` from `warn` to `error`
 * Enforces single quotes instead of double quotes.
 * Uses 4 space indents instead of 2.
 * Semicolon is not allowed.

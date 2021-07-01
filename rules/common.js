@@ -1,8 +1,4 @@
 module.exports = {
-    extends: [
-        "plugin:prettier/recommended",
-        "plugin:vue/recommended"
-    ],
     rules: {
         "no-alert": "error",
         "no-array-constructor": "error",
@@ -275,5 +271,23 @@ module.exports = {
                 "message": "Relative imports are not allowed. Please use \'@\' for a module or \'@/\' for the project root."
             }]
         }],
-    }
+        "no-shadow": ["error", { "allow": ["state"] }],
+        "no-param-reassign": [
+            "error",
+            {
+                "props": true,
+                "ignorePropertyModificationsFor": [
+                    "state",
+                    "acc",
+                    "e",
+                    "ctx",
+                    "req",
+                    "request",
+                    "res",
+                    "response",
+                    "$scope"
+                ]
+            }
+        ],
+    },
 };

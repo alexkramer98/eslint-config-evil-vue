@@ -15,6 +15,8 @@ module.exports = {
         "./rules/sonarjs",
         "./rules/unicorn",
         "./rules/no-loops",
+        "./rules/vue",
+        "./rules/prettier",
     ].map(require.resolve),
     parserOptions: {
         sourceType: "module",
@@ -22,33 +24,6 @@ module.exports = {
     env: {
         es2021: true,
         browser: true,
-    },
-    rules: {
-        "prettier/prettier": ["error", {
-            semi: false,
-            singleQuote: true,
-            tabWidth: 4,
-        }],
-        "vue/html-indent": ["error", 4],
-        "no-shadow": ["error", { "allow": ["state"] }],
-        "vue/padding-line-between-blocks": ["error", "always"],
-        "no-param-reassign": [
-            "error",
-            {
-                "props": true,
-                "ignorePropertyModificationsFor": [ // All properties except state are in the ignorePropertyModificationsFor array by default.
-                    "state",
-                    "acc",
-                    "e",
-                    "ctx",
-                    "req",
-                    "request",
-                    "res",
-                    "response",
-                    "$scope"
-                ]
-            }
-        ],
     },
     reportUnusedDisableDirectives: true,
     ignorePatterns: [
@@ -69,10 +44,6 @@ module.exports = {
         "**/*.min.*"
     ],
     overrides: [
-        {
-            "files": ["*.htm", "*.html"],
-            "rules": { "prettier/prettier": ["error", { "parser": "html" }] }
-        },
         {
             files: [
                 "**/test/**",
