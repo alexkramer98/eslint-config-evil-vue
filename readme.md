@@ -19,6 +19,7 @@ A little stricter - thus: evil - but still very useful and compatible with `VueJ
 * Require early return where applicable.
 * Console statements are allowed (generates a warning instead of an error), but only in the development environment. (You can/should use `husky` to lint your code using the production environment in a `pre-commit hook`.)
 * Imports cannot be relative. Use `@` for modules or `@/` for the project root instead.
+* Require optional chaining where applicable. 
 
 ## Split rules
 

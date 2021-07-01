@@ -17,6 +17,7 @@ module.exports = {
         "./rules/no-loops",
         "./rules/vue",
         "./rules/prettier",
+        "./rules/@typescript-eslint",
     ].map(require.resolve),
     parserOptions: {
         sourceType: "module",
