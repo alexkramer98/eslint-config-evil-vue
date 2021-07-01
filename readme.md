@@ -16,7 +16,7 @@ A little stricter - thus: evil - but still very useful and compatible with `VueJ
 * Uses 4 space indents instead of 2.
 * Semicolon is not allowed.
 * Loops of any kind are not allowed.
-* Require early return where applicable
+* Require early return where applicable.
 * Console statements are allowed (generates a warning instead of an error), but only in the development environment. (You can/should use `husky` to lint your code using the production environment in a `pre-commit hook`.)
 
 ## Split rules
