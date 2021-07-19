@@ -15,7 +15,6 @@ module.exports = {
         "vue/html-closing-bracket-newline": "error",
         "vue/html-closing-bracket-spacing": "error",
         "vue/html-end-tags": "error",
-        "vue/html-indent": "error",
         "vue/html-quotes": "error",
         "vue/html-self-closing": "error",
         "vue/max-attributes-per-line": "error",
